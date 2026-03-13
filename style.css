@@ -1,0 +1,16 @@
+body {
+    background-color:gray;
+    color: white;
+    
+}
+.card img{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+h3 {
+    color:violet;
+    text-align: center;
+}
