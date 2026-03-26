@@ -14,19 +14,17 @@ h3 {
     color:violet;
     text-align: center;
 }
-/* fundo da página */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
     text-align: center;
 }
 
-/* título */
 h2 {
     color: #333;
 }
 
-/* formulário */
 form {
     background-color: white;
     padding: 20px;
@@ -58,4 +56,8 @@ button {
 
 button:hover {
     background-color: darkblue;
+}
+a button {
+    margin-top: 10px;
+    background-color: gray;
 }
