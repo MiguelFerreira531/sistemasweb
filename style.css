@@ -14,3 +14,48 @@ h3 {
     color:violet;
     text-align: center;
 }
+/* fundo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+/* título */
+h2 {
+    color: #333;
+}
+
+/* formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: darkblue;
+}
