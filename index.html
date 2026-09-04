@@ -9,7 +9,11 @@
     <title>Catalogo</title><!---é o titulo que vai tar --->
     <cript>
         let promise = fetch('/api/lista');
-        conole.log(promise);
+        promise.then(getData);
+
+        function getData(data){
+            console.log(data);
+        }
     </cript>
 </head>
 <body><!--- mostra todos elementos visuais da pag --->
