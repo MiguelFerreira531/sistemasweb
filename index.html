@@ -10,9 +10,12 @@
     <cript>
         let promise = fetch('/api/lista');
         promise.then(getData);
-
+        promise.catch(getErr);
         function getData(data){
             console.log(data);
+        }
+        function getErr(err){
+           console.log(err);
         }
     </cript>
 </head>
