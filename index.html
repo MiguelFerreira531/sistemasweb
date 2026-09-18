@@ -12,6 +12,8 @@
         <button>Ir para cadastro</button>
     </a>
 
+    <div class="todosCards"></div>
+
     <div class="card">
         <header><h3>manga de JoJo parte 4</h3></header>
 
@@ -38,10 +40,26 @@
     </div>
 
     <script>
-        fetch('/api/lista')
-        .then((data)=> data.json())
-        .then((json) => console.log(json))
-        .catch((err) => console.log(err));
+const container = document.querySelector('.todosCards');
+
+fetch('/api/lista')
+  .then((data) => data.json())
+  .then((listaDeObras) => {
+    listaDeObras.forEach((obra) => {
+      container.innerHTML += `
+        <div class="card">
+          <div class="texto">
+            <h3>${obra.titulo}</h3>
+            <p>${obra.descricao}</p>
+          </div>
+          <div class="img">
+            <img src="${obra.imagem}" alt="${obra.descImagem}">
+          </div>
+        </div>
+      `;
+    });
+  })
+  .catch((err) => console.log(err));
     </script>
 </body>
 </html>
